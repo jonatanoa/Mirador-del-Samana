@@ -1,0 +1,112 @@
+.description{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(4rem, 40%));
+    background: linear-gradient(184deg, #ececec 0%, #ececec 0%, #9aebfb 100%);
+    padding-top: 10rem;
+
+    // &-title{
+    //     display: grid;
+    //     text-align: center;
+    //     font-family: 'Patrick Hand', cursive;
+    //     font-size: 2.5rem;
+    //     margin-bottom: 4rem;
+    // }
+
+    // &-aboutUs{
+    //     display: grid;
+    //     grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr) );//responsive
+    //     gap: 2rem;
+
+    //     &_img{
+    //         width: 2rem;
+    //         place-self: center;
+    //     }
+    //     &_paragraph{
+    //         width: 36rem;
+    //         place-self: center start;
+    //         font-size: 1.3rem;
+    //         font-family: 'Merienda', cursive;
+    //     }
+
+    // } 
+    
+    // &-mission{
+    //     display: grid;
+    //     grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr) );//responsive
+    //     gap: 2rem;
+
+    //     &_img{
+    //         width: 2rem;
+    //         place-self: center;
+    //     }
+
+    //     &_title{
+    //         text-align: center;
+    //         place-self: center end;
+    //         font-family: 'Patrick Hand', cursive;
+    //         font-size: 2rem;
+
+    //         &-paragraph{
+    //             text-align: justify;
+    //             width: 36rem;
+    //             font-size: 1.3rem;
+    //             font-family: 'Merienda', cursive;
+    //             font-weight: 100;
+    //         }
+    //     }
+    // }
+
+    // &-vision{
+    //     display: grid;
+    //     grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr) );//responsive
+    //     gap: 2rem;
+
+    //     &_img{
+    //         width: 2rem;
+    //         place-self: center;
+    //     }
+
+    //     &_title{
+    //         text-align: center;
+    //         place-self: center start;
+    //         font-family: 'Patrick Hand', cursive;
+    //         font-size: 2rem;
+
+    //         &-paragraph{
+    //             text-align: justify;
+    //             width: 36rem;
+    //             font-size: 1.3rem;
+    //             font-family: 'Merienda', cursive;
+    //             font-weight: 100;
+    //         }
+    //     }
+    // }
+
+    // &-values{
+    //     display: grid;
+    //     grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr) );//responsive
+    //     gap: 2rem;
+    //     place-self: center;
+
+    //     &_img{
+    //         width: 2rem;
+    //         place-self: center;
+    //     }
+
+    //     &_title{
+    //         text-align: center;
+    //         place-self: center end;
+    //         font-family: 'Patrick Hand', cursive;
+    //         font-size: 2rem;
+
+    //         &-paragraph{
+    //             text-align: center;
+    //             width: 36rem;
+    //             font-size: 1.3rem;
+    //             font-family: 'Merienda', cursive;
+    //             font-weight: 100;
+    //         }
+    //     }
+    // }
+}
