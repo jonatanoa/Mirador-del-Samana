@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <!-- fonst -->
+    <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"><!--main-->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet"><!--sub-->
-    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Courgette&family=Merienda&family=Patrick+Hand&display=swap" rel="stylesheet"><!--description, paragraph-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"><!--description, paragraph-->
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Courgette&family=Patrick+Hand&display=swap" rel="stylesheet"><!--description, title-->
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet"><!--description title-->
+    <!--icons-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Mirador del Samaná</title>
 </head>
 <body>
@@ -24,63 +27,176 @@
             </h2>
         </div>
         <!--waves-->
-        <div class="waves" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-42.04,61.50 C178.04,147.36 325.90,149.33 605.25,34.86 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ececec;"></path></svg></div>
     </header>
-    <main> 
+    <main>
         <section class="description"> <!--description-->
-            <div class="description-aboutUs">
-                <img class="description-aboutUs_img" src="img/hotel-solid.svg" alt="QUIENES SOMOS">
-                <h3 class="description-aboutUs_title">¿Quienes somos?
-                    <p class="description-aboutUs_title-paragraph">Somos un hotel que ofrecemos servicio de 
-                        alojamiento rural, en el municipio de Nariño Antioquia a
-                        orillas del rio Samaná, vereda puente linda. <br> Nuestras instalaciones  
-                        y habitaciones son rusticas, construidas en guadua y con vista al rio;  
-                        además nuestro restaurante cuenta con gran reconocimiento en la región por
-                        la buena sazón y variedad de las comidas.
-                    </p>
-                </h3>
+            <h2 class="description-title">Un poco de nosotros...</h2> 
+            <div class="description-descriptionbx">
+                <div class=" description-descriptionbx-aboutUs">
+                    <img class=" description-descriptionbx-aboutUs_img" src="img/hotel.png" alt="QUIENES SOMOS">
+                    <h3 class=" description-descriptionbx-aboutUs_title">¿Quienes somos?
+                        <p class=" description-descriptionbx-aboutUs_title-paragraph">Somos un hotel que ofrecemos servicio de 
+                            alojamiento rural, en el municipio de Nariño Antioquia a
+                            orillas del rio Samaná, vereda puente linda. <br> Nuestras instalaciones  
+                            y habitaciones son rusticas, construidas en guadua y con vista al rio;  
+                            además nuestro restaurante cuenta con gran reconocimiento en la región por
+                            la buena sazón y variedad de las comidas.
+                        </p>
+                    </h3>
+                </div>
+                <div class=" description-descriptionbx-mission">
+                    <img class=" description-descriptionbx-mission_img" src="img/alojamiento.png" alt="Misión">
+                    <h3 class=" description-descriptionbx-mission_title">Misión
+                        <p class=" description-descriptionbx-mission_title-paragraph">Proporcionar servicio de alojamiento a turistas y 
+                            visitantes en un ambiente natural y acogedor donde 
+                            encontraran mucho aseo y limpieza, acompañado de buen servicio 
+                            en armonía con la naturaleza, rodeado de montañas.
+                        </p>
+                    </h3>
+                </div>
+                <div class=" description-descriptionbx-vision">
+                    <img class=" description-descriptionbx-vision_img" src="img/objetivo.png" alt="Visión">
+                    <h3 class=" description-descriptionbx-vision_title">Visión
+                        <p class=" description-descriptionbx-vision_title-paragraph">Somos una familia que ofrecemos, servicio 
+                                de alojamiento y restaurante en el municipio
+                             de Nariño Antioquia a 10 minutos de
+                              los termales del Espíritu Santo. 
+                              Queremos ser reconocidos a nivel 
+                              municipal y regional como una de las 
+                              mejores opciones para los turistas que 
+                              visitan nuestro destino turístico de Antioquia.
+                        </p>
+                    </h3>
+                </div>
+                <div class=" description-descriptionbx-values">
+                    <img class=" description-descriptionbx-values_img" src="img/valores.png" alt="Valores">
+                    <h3 class=" description-descriptionbx-values_title">Valores
+                        <p class=" description-descriptionbx-values_title-paragraph">
+                            Ambiente Familiar <br>
+                            Buena Sazón<br>
+                            Aseo y limpieza<br>
+                            Calidad Humana <br>
+                            Honradez
+                        </p>
+                    </h3>
+                </div>
             </div>
-            <div class="description-mission">
-                <img class="description-mission_img" src="img/bed-solid.svg" alt="Misión">
-                <h3 class="description-mission_title">Misión
-                    <p class="description-mission_title-paragraph">Proporcionar servicio de alojamiento a turistas y 
-                        visitantes en un ambiente natural y acogedor donde 
-                        encontraran mucho aseo y limpieza, acompañado de buen servicio 
-                        en armonía con la naturaleza, rodeado de montañas.
-                    </p>
-                </h3>
+        </section>
+        
+        <section class="location"> <!--location-->
+            <h3 class="location-title">Nuestra Ubicación</h3>
+            <div class="location-locationbx">
+                <img class="location-locationbx-bridgeImg" src="img/puente.jpg" alt="">
+                <div class="location-locationbx-mapbx">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5873.764535723569!2d-75.11745799070431!3d5.56764462356536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e46d78f1aa0bdcd%3A0xfee884c696c1ddfe!2sHotel%20El%20Mirador%20Del%20Samana!5e1!3m2!1ses-419!2sco!4v1657327066086!5m2!1ses-419!2sco" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
-            <div class="description-vision">
-                <img class="description-vision_img" src="img/building-flag-solid.svg" alt="Visión">
-                <h3 class="description-vision_title">Visión
-                    <p class="description-vision_title-paragraph">Somos una familia que ofrecemos, servicio 
-                            de alojamiento y restaurante en el municipio
-                         de Nariño Antioquia a 10 minutos de
-                          los termales del Espíritu Santo. 
-                          Queremos ser reconocidos a nivel 
-                          municipal y regional como una de las 
-                          mejores opciones para los turistas que 
-                          visitan nuestro destino turístico de Antioquia.
-                    </p>
-                </h3>
-            </div>
-            <div class="description-values">
-                <img class="description-values_img" src="img/heart-solid.svg" alt="Valores">
-                <h3 class="description-values_title">Valores
-                    <p class="description-values_title-paragraph">
-                        Ambiente Familiar <br>
-                        Buena Sazón<br>
-                        Aseo Y La Limpieza<br>
-                        Calidad Humana <br>
-                        Honradez
-                    </p>
-                </h3>
+        </section>
+
+        <section class="comments"> <!--comments-->
+            <h3 class="comments-title">Experiencias de nuestros clientes</h3>
+            <div class="comments-commentsbx">
+                <div class="card"><!--card1-->
+                    <div class="card-imgbx">
+                        <img class="card-imgbx_img" src="img/fotos/1.jpg" alt="">
+                    </div>
+                    <div class="card-content"> 
+                        <div class="card-content-bx">
+                            <h3 class="card-content-bx_name">Jonatan Osorio Arcila <br><span class="card-content-bx_name-occupation">Educador</span></h3>
+                            <p class="card-content-bx_description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                 Pariatur consequuntur culpa deserunt architecto deleniti, facilis 
+                                 itaque asperiores molestias voluptates
+                                 odit iusto illum debitis excepturi obcaecati placeat, veritatis aperiam quasi. Est!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card"><!--card2-->
+                    <div class="card-imgbx">
+                        <img class="card-imgbx_img" src="img/fotos/2.jpg" alt="">
+                    </div>
+                    <div class="card-content"> 
+                        <div class="card-content-bx">
+                            <h3 class="card-content-bx_name">Jonatan Osorio Arcila <br><span class="card-content-bx_name-occupation" >Educador</span></h3>
+                            <p class="card-content-bx_description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                 Pariatur consequuntur culpa deserunt architecto deleniti, facilis 
+                                 itaque asperiores molestias voluptates
+                                 odit iusto illum debitis excepturi obcaecati placeat, veritatis aperiam quasi. Est!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card"><!--card3-->
+                    <div class="card-imgbx">
+                        <img class="card-imgbx_img" src="img/fotos/3.jpg" alt="">
+                    </div>
+                    <div class="card-content"> 
+                        <div class="card-content-bx">
+                            <h3 class="card-content-bx_name">Jonatan Osorio Arcila <br><span class="card-content-bx_name-occupation">Educador</span></h3>
+                            <p class="card-content-bx_description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                 Pariatur consequuntur culpa deserunt architecto deleniti, facilis 
+                                 itaque asperiores molestias voluptates
+                                 odit iusto illum debitis excepturi obcaecati placeat, veritatis aperiam quasi. Est!
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section> 
-        <section> <!--location-->
-        </section> 
-        <section> <!--contact us-->
-        </section> 
+
+        <section class="icons"> <!--ContactUs-->
+            <ul class="icon-ul">
+                <li class="icon-ul__li">
+                    <a href="#">
+                        <span class="icon-ul__li--span"></span>
+                        <span class="icon-ul__li--span"></span>
+                        <span class="icon-ul__li--span"></span>
+                        <span class="icon-ul__li--span"></span>
+                        <span  class="fa fa-facebook icon-ul__li--span" aria-hidden="true"></span>
+                    </a>
+                </li>
+
+                <li class="icon-ul__li">
+                    <a href="#">
+                        <span class="icon-ul__li--span"></span>
+                        <span class="icon-ul__li--span"></span>
+                        <span class="icon-ul__li--span"></span>
+                        <span class="icon-ul__li--span"></span>
+                        <span class="fa fa-twitter icon-ul__li--span" aria-hidden="true"></span>
+                    </a>
+                </li>
+                <li class="icon-ul__li">
+                    <a href="#">
+                        <span class="icon-ul__li--span"></span>
+                        <span class="icon-ul__li--span"></span>
+                        <span class="icon-ul__li--span"></span>
+                        <span class="icon-ul__li--span"></span>
+                        <span  class="fa fa-google-plus icon-ul__li--span" aria-hidden="true"></span>
+                    </a>
+                </li>
+                <li class="icon-ul__li">
+                    <a href="#">
+                        <span class="icon-ul__li--span"></span>
+                        <span class="icon-ul__li--span"></span>
+                        <span class="icon-ul__li--span"></span>
+                        <span class="icon-ul__li--span"></span>
+                        <span  class="fa fa-linkedin icon-ul__li--span" aria-hidden="true"></span>
+                    </a>
+                </li>
+                <li class="icon-ul__li">
+                    <a href="#">
+                        <span class="icon-ul__li--span"></span>
+                        <span class="icon-ul__li--span"></span>
+                        <span class="icon-ul__li--span"></span>
+                        <span class="icon-ul__li--span"></span>
+                        <span  class="fa fa-instagram icon-ul__li--span" aria-hidden="true"></span>
+                    </a>
+                </li>
+            </ul>
+        </section>  
         <section> <!--footer-->
         </section> 
     </main>
