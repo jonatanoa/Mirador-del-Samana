@@ -18,21 +18,21 @@
     &-descriptionbx{
         display: grid;
         justify-content: center;
-        // grid-template-columns: repeat(auto-fit, minmax(4rem, 35rem));
+        align-items: center;
         grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-        // background: linear-gradient(184deg, #ececec 0%, #ececec 0%, #9aebfb 100%);
         background-color: #ececec;
         gap: 2rem;
+        padding: 0 2rem;
         // column-gap: 10rem;
         // row-gap: 4rem;
     
-        &-aboutUs{
+        &-card{
             display: grid;
             grid-template-rows: 3.5rem 1fr;
             padding: 1rem;
-            place-self: center end;
+            place-self: center;
             width: 18rem;
-            background-color: white;
+            background-color: #fff6f6;
             height: 28rem;
             transition: all .2s;
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
@@ -41,6 +41,7 @@
             &:hover {
                 transform: translateY(-3px);
                 box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                background: white;
             }
     
             &_img{
@@ -58,120 +59,15 @@
                     font-family: 'Open Sans', sans-serif;
                     text-align: justify;
                     color: black;
-    
+                    &-values{
+                        font-size: 17px;
+                        font-family: 'Open Sans', sans-serif;
+                        text-align: center;
+                        color: black;
+                    }
                 }
             }
     
         } 
-        
-        &-mission{
-            display: grid;
-            grid-template-rows: 3.5rem 1fr;
-            padding: 1rem;
-            place-self: center start;
-            width: 18rem;
-            background-color: white;
-            height: 28rem;
-            transition: all .2s;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    
-            &:hover {
-                transform: translateY(-3px);
-                box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-            }
-    
-            &_img{
-                width: 4rem;
-                place-self: start center;
-            }
-            &_title{
-                text-align: center;
-                place-self: start center;
-                font-family: 'Patrick Hand', cursive;
-                font-size: 2rem;
-                color:#fb5757;
-    
-            
-                &-paragraph{
-                    font-size: 17px;
-                    font-family: 'Open Sans', sans-serif;
-                    text-align: justify;
-                    color: black;
-                }
-            }
-        }
-    
-        &-vision{
-            display: grid;
-            grid-template-rows: 3.5rem 1fr;
-            padding: 1rem;
-            place-self: center end;
-            width: 18rem;
-            background-color: white;
-            height: 28rem;
-            transition: all .2s;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    
-            &:hover {
-                transform: translateY(-3px);
-                box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-            }
-    
-            &_img{
-                width: 4rem;
-                place-self: start center;
-            }
-            &_title{
-                text-align: center;
-                font-family: 'Patrick Hand', cursive;
-                font-size: 2rem;
-                color:#fb5757;
-    
-            
-                &-paragraph{
-                    font-size: 17px;
-                    font-family: 'Open Sans', sans-serif;
-                    text-align: justify;
-                    color: black;
-                }
-            }
-        }
-    
-        &-values{
-            display: grid;
-            grid-template-rows: 3.5rem 1fr;
-            padding: 1rem;
-            place-self: center start;
-            width: 18rem;
-            background-color: white;
-            height: 28rem;
-            transition: all .2s;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    
-            &:hover {
-                transform: translateY(-3px);
-                box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-            }
-    
-            &_img{
-                width: 4rem;
-                place-self: start center;
-            }
-            &_title{
-                text-align: center;
-                place-self: start center;
-                font-family: 'Patrick Hand', cursive;
-                font-size: 2rem;
-                color:#fb5757;
-    
-            
-                &-paragraph{
-                    font-size: 17px;
-                    font-family: 'Open Sans', sans-serif;
-                    text-align: center;
-                    color: black;
-                }
-            }
-        }
     }
 }

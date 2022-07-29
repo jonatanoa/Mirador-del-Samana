@@ -9,11 +9,13 @@
     &-title{
         display: grid;
         justify-content: center;
+        align-items: center;
         color:#fb5757;
         text-shadow: 3px 0px 2px rgba(0,0,0,0.6);
         padding-top: 6rem;
         font-size: 3rem;
         font-family: 'Satisfy', cursive;
+        text-align: center;
     }
 
     &-commentsbx{
@@ -37,6 +39,20 @@
         overflow: hidden; //para tener la imagen recortada
         box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         border-radius: 4px;
+
+        &-imgbx{
+            &_img{
+                &-1{
+                    height: 25rem;
+                }
+                &-2{
+                    height: 33rem;
+                }
+                &-3{
+                    height: 25rem;
+                }
+            }
+        }
         
         &-content{
             display: grid;
@@ -44,21 +60,20 @@
             align-items: center;
             text-align: center;
             position: absolute;
-            bottom: -230px;
-            // bottom: 0px;
+            bottom: -27rem;
             width: 100%;
-            height: 14rem;
+            height: 26rem;
             z-index: 10;
             grid-template-columns: 1fr;
-            backdrop-filter: blur(15px);
+            backdrop-filter: blur(6px);
             box-shadow: 0 -10px 10px rgba(0,0,0,0.3);
             border: 1px solid rgba(255,255,255,0.2);
             transition: 0.5s;
     
             &-bx{
                 &_name{
-                    color: #fff;
-                    font-size: 25px;
+                    color:#fb5757;
+                    font-size: 1.6rem;
                     text-align: center;
                     line-height: 20px;
                     margin: 20px 0 15px;
@@ -67,12 +82,19 @@
                     transform: translateY(-20px);
     
                     &-occupation{
-                        color: rgb(235, 250, 250);
+                        // color: rgb(235, 250, 250);
+                        color: #fb5757;
                         font-size: 18px;
                         transition: 6s;
                         opacity: 0;
                         transform: translateY(-20px);
                     }
+                }
+                &_description{
+                    padding: 0 16px;
+                    font-size: 1.1rem;
+                    color: white;
+                    text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
                 }
             }
         }
@@ -92,6 +114,8 @@
     .card:hover .card-content .card-content-bx .card-content-bx_name .card-content-bx_name-occupation{
         opacity: 1;
         transform: translateY(0px);
+        color: rgb(235, 250, 250);
+
     
     }
 }
