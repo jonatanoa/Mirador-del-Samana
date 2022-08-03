@@ -508,12 +508,13 @@
   width: 120px;
   height: 60px;
   background: #fff;
-  box-shadow: 0 25px 35px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
   display: flex;
   justify-content: space-between;
   z-index: 4000;
   transition: height 0.5s, width 0.5s;
   transition-delay: 0s, 0.75s;
+  overflow: hidden;
 }
 .navigation.active{
   width: 300px;
@@ -529,22 +530,25 @@
   overflow: hidden;
   display: flex;
   align-items: center;
+  transition: 0.5s;
+  transition-delay: 0.5s;
 }
 .navigation.active .userBx{
   width: calc(100% - 60px);
+  transition-delay: 0s;
 }
 .navigation .userBx .titlemenu{
   white-space: nowrap; /*esto hace que el nombre salga del contenedor padre*/
   color: #555;
-  font-size: 1.1em;
-  margin: 0 40px;
+  font-size: 1.5em;
+  margin: 0 24px;
 }
 .navigation .userBx .imgBx{
   position: relative;
   min-width: 60px;
   height: 60px;
   overflow: hidden;
-  background: #000;
+  background: #fff;
   border-radius: 50%;
   border: 10px solid #fff;
 }
@@ -589,4 +593,33 @@
 }
 .navigation.active .menuToggle::after{ /*efecto Raya de abajo*/
   transform: translateY(0px) rotate(-45deg);
+}
+.menu{
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 60px);
+  margin-top: 60px;
+  padding: 20px;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+.menu .list{
+  list-style: none;
+}
+.menu .list .link:hover{
+  color: #4e65ff ;
+}
+.menu .list .link{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 25px 0;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #555;
+}
+.menu .list .link ion-icon{
+  font-size: 1.5em;
+}
+.menu .list .link:hover ion-icon{
+  color: rgb(0, 0, 0);
 }
