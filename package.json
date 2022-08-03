@@ -1,18 +1,22 @@
 {
-  "name": "mirador",
+  "name": "mirador-del-samana",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass":"node-sass sass/main.scss css/style.css -w"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jonatanparamosoftware"
+    "url": "git+https://github.com/jonatanparamosoftware/Mirador-del-Samana.git"
   },
   "author": "jonatan",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonatanparamosoftware/Mirador-del-Samana/issues"
+  },
+  "homepage": "https://github.com/jonatanparamosoftware/Mirador-del-Samana#readme",
   "devDependencies": {
-    "node-sass": "^7.0.1"
+    "node-sass": "npm:sass@^1.54.0"
   }
 }

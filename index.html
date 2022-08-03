@@ -16,6 +16,15 @@
     <title>Mirador del Samaná</title>
 </head>
 <body>
+    <section class="navigation"> <!--menú-->
+        <div class="userBx">
+            <div class="imgBx">
+                <img class="img" src="img/logo.png">
+            </div>
+            <p class="titlemenu">¡Bienvenid@!</p>
+        </div>
+        <div class="menuToggle"></div>
+    </section>
     <header class="header"> <!--header-->
         <div class="heading-primary">
             <img src="img/logo.png" class="header-logo">
@@ -227,5 +236,12 @@
 
         </section> 
     </main>
+    <script>
+        let menuToggle = document.querySelector('.menuToggle');
+        let navigation = document.querySelector('.navigation');
+        menuToggle.onclick = function(){
+            navigation.classList.toggle('active')
+        }
+    </script>
 </body>
 </html>
