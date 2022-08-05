@@ -85,7 +85,7 @@
   height: 37em;
   display: grid;
   grid-template-rows: 28rem repeat(auto-fit, minmax(4rem, 1fr));
-  background-image: linear-gradient(to left top, rgba(0, 0, 0, 0.1), rgba(112, 40, 40, 0.3)), url(../../img/10.jpg);
+  background-image: linear-gradient(to left top, rgba(0, 0, 0, 0.1), rgba(112, 40, 40, 0.3)), url(../images/10.jpg);
   background-size: cover;
   /*para centrar la imagen*/
   background-position: top; }
@@ -460,7 +460,7 @@
       left: 0;
       width: 100%;
       height: 100px;
-      background: url(../../img/wave.png);
+      background: url(../images/wave.png);
       background-size: 1000px 100px; }
       .footer-bx-waves_wave#wave1 {
         z-index: 1000;
@@ -612,7 +612,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  margin: 25px 0;
+  margin: 18px 0;
   font-size: 1.2em;
   text-decoration: none;
   color: #555;
@@ -623,3 +623,68 @@
 .menu .list .link:hover ion-icon{
   color: rgb(0, 0, 0);
 }
+
+/*Gallery*/
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-auto-flow: dense;
+  grid-auto-rows: minmax(200px,auto);
+  gap: 20px;
+  padding: 20px;
+
+}
+.gallery .gallery-card{
+  overflow: hidden;
+}
+
+.gallery .gallery-card .card{
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+.gallery .gallery-card .card:hover{
+  filter: opacity(0.9);
+  transform: scale(1.1);
+}
+@media(min-width:600px){
+  .gallery .wide{
+    grid-column: span 2;
+  }
+}
+
+/* .gallery-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-auto-rows: minmax(200px,auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+}
+@media(min-width:600px){
+.wide{
+  grid-column: span 2;
+}
+.tall{
+  grid-row: span 2;
+}}
+.gallery-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #03afff;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.img1{
+  background-image: url(../images/fotos/img1.jpg);
+} */
+/* .grid-item:hover{
+  filter: opacity(0.9);
+  transform: scale(1.1);
+} */

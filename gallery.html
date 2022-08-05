@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+    <title>Galeria de fotos</title>
+</head>
+<body>
+    <section class="navigation"> <!--menú-->
+        <div class="userBx">
+            <div class="imgBx">
+                <img class="img" src="images/logo.png">
+            </div>
+            <p class="titlemenu">¡Bienvenidos!</p>
+        </div>
+        <div class="menuToggle"></div>
+        <div class="menu">
+            <li class="list"><a class="link" href="#"><ion-icon name="home-outline"></ion-icon>
+                Inicio</a></li>
+            <li class="list"><a class="link" href="#"><ion-icon name="images-outline"></ion-icon>
+                Galeria</a></li>
+            <li class="list"><a class="link" href="#"><ion-icon name="newspaper-outline"></ion-icon>
+                ¿Quienes somos?</a></li>
+            <li class="list"><a class="link" href="#"><ion-icon name="map-outline"></ion-icon>
+                Nuesta ubicación</a></li>
+            <li class="list"><a class="link" href="#"><ion-icon name="chatbox-ellipses-outline"></ion-icon>
+                Reseñas</a></li>
+            <li class="list"><a class="link" href="#"><ion-icon name="call-outline"></ion-icon>
+                Contactos</a></li>
+        </div>
+    </section>
+    <section class="gallery">
+        <div class="gallery-card">
+            <a href="images/fotos/img1.jpg" data-lightbox="roadtrip" data-title="My caption">
+                <img class="card" src="images/fotos/img1.jpg">
+            </a>
+        </div>
+        <div class="gallery-card wide">
+            <a href="images/fotos/img2.jpg" data-lightbox="roadtrip" data-title="My caption">
+                <img class="card img2" src="images/fotos/img2.jpg">
+            </a>
+        </div>
+        <div class="gallery-card">
+            <a href="images/fotos/img3.jpg" data-lightbox="roadtrip" data-title="My caption">
+                <img class="card img3" src="images/fotos/img3.jpg">
+            </a>
+        </div>
+        <div class="gallery-card">
+            <a href="images/fotos/img4.jpg" data-lightbox="roadtrip" data-title="My caption">
+                <img class="card img4" src="images/fotos/img4.jpg">
+            </a>
+        </div>
+        <div class="gallery-card">
+            <a href="images/fotos/img5.jpg" data-lightbox="roadtrip" data-title="My caption">
+                <img class="card img5" src="images/fotos/img5.jpg">
+            </a>
+        </div>
+        <div class="gallery-card">
+            <a href="images/fotos/img6.jpg" data-lightbox="roadtrip" data-title="My caption">
+                <img class="card img6" src="images/fotos/img6.jpg">
+            </a>
+        </div>
+        <div class="gallery-card">
+            <a href="images/fotos/img7.jpg" data-lightbox="roadtrip" data-title="My caption">
+                <img class="card img7" src="images/fotos/img7.jpg">
+            </a>
+        </div>
+        <div class="gallery-card wide">
+            <a href="images/fotos/img8.jpg" data-lightbox="roadtrip" data-title="My caption">
+                <img class="card img8" src="images/fotos/img8.jpg">
+            </a>
+        </div>
+        <div class="gallery-card">
+            <a href="images/fotos/img9.jpg" data-lightbox="roadtrip" data-title="My caption">
+                <img class="card img9" src="images/fotos/img9.jpg">
+            </a>
+        </div>
+        <div class="gallery-card">
+            <a href="images/fotos/img10.jpg" data-lightbox="roadtrip" data-title="My caption">
+                <img class="card img10" src="images/fotos/img10.jpeg">
+            </a>
+        </div>
+        <div class="gallery-card">
+            <a href="images/fotos/img11.jpg" data-lightbox="roadtrip" data-title="My caption">
+                <img class="card img11" src="images/fotos/img11.jpg">
+            </a>
+        </div>
+        <div class="gallery-card wide">
+            <a href="images/fotos/img12.jpg" data-lightbox="roadtrip" data-title="My caption">
+                <img class="card img12" src="images/fotos/img12.jpg">
+            </a>
+        </div>
+    </section>
+
+
+    <!--Scripts-->
+    <script src="./js/lightbox-plus-jquery.min.js"></script>
+    <script src="./js/lightbox.min.js"></script>
+    <script src="./js/App.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        let menuToggle = document.querySelector('.menuToggle');
+        let navigation = document.querySelector('.navigation');
+        menuToggle.onclick = function(){
+            navigation.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
