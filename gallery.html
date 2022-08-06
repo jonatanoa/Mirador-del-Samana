@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/gallery.css">
     <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"><!--main-->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet"><!--sub-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"><!--description, paragraph-->
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Courgette&family=Patrick+Hand&display=swap" rel="stylesheet"><!--description, title-->
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet"><!--description title-->
+    <!--icons-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Galeria de fotos</title>
 </head>
 <body>
@@ -18,7 +26,7 @@
         </div>
         <div class="menuToggle"></div>
         <div class="menu">
-            <li class="list"><a class="link" href="#"><ion-icon name="home-outline"></ion-icon>
+            <li class="list"><a class="link" href="./index.html"><ion-icon name="home-outline"></ion-icon>
                 Inicio</a></li>
             <li class="list"><a class="link" href="#"><ion-icon name="images-outline"></ion-icon>
                 Galeria</a></li>
@@ -32,7 +40,7 @@
                 Contactos</a></li>
         </div>
     </section>
-    <section class="gallery">
+    <section class="gallery"> <!--Gallery-->
         <div class="gallery-card">
             <a href="images/fotos/img1.jpg" data-lightbox="roadtrip" data-title="My caption">
                 <img class="card" src="images/fotos/img1.jpg">
@@ -94,6 +102,42 @@
             </a>
         </div>
     </section>
+    <section class="footer"> <!--footer-->
+        <div class="footer-bx">
+            <div class="footer-bx-content">
+                <div class="footer-bx-content-imgBx">
+                    <img class="footer-bx-content-imgBx-img" src="images/logo.png">
+                </div>
+                <div class="footer-bx-content-bx">
+                    <h3 class="footer-bx-content-bx-title">¿Deseas mas informacion?</h3>
+                    <div class="footer-bx-content-bx-contactBx">
+                        <div class="footer-bx-content-bx-contactBx-contacts">
+                            <ul class="footer-bx-content-bx-contactBx-contacts-icon">
+                                <i class="fa fa-phone-square" aria-hidden="true"></i>
+                            </ul>
+                            <p class="footer-bx-content-bx-contactBx-contacts-p">(+57)3112279173 - (+57)3128461393</p>
+                        </div>
+                        <div class="footer-bx-content-bx-contactBx-contacts">
+                            <ul class="footer-bx-content-bx-contactBx-contacts-icon">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </ul>
+                            <p class="footer-bx-content-bx-contactBx-contacts-p">jonathan950904@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="footer-bx-content-bx-desing">
+                        <p class="footer-bx-content-bx-desing-p">Creado y diseñado por <a class="footer-bx-content-bx-desing-p-a">Jonatan Osorio A.</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bx-waves">
+                <div class="footer-bx-waves_wave" id="wave1"></div>
+                <div class="footer-bx-waves_wave" id="wave2"></div>
+                <div class="footer-bx-waves_wave" id="wave3"></div>
+                <div class="footer-bx-waves_wave" id="wave4"></div>
+            </div>
+        </div>
+
+    </section> 
 
 
     <!--Scripts-->
