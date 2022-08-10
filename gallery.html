@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/gallery.css">
     <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="./index.html">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"><!--main-->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet"><!--sub-->
@@ -28,85 +29,26 @@
         <div class="menu">
             <li class="list"><a class="link" href="./index.html"><ion-icon name="home-outline"></ion-icon>
                 Inicio</a></li>
-            <li class="list"><a class="link" href="#"><ion-icon name="images-outline"></ion-icon>
-                Galeria</a></li>
-            <li class="list"><a class="link" href="#"><ion-icon name="newspaper-outline"></ion-icon>
+            <li class="list">
+                <a class="link" href="#"><ion-icon name="images-outline"></ion-icon>
+                Galeria
+                    <li class="list-gastronomy"><a href="#exterior" class="a-gastronomy"><i class="icon-g fa fa-pagelines" aria-hidden="true"></i>Exterior</a></li>
+                    <li class="list-gastronomy"><a href="#interior" class="a-gastronomy"><ion-icon class="icon-g" name="bed-outline"></ion-icon>Interior</a></li>
+                    <li class="list-gastronomy"><a href="#gastronomia" class="a-gastronomy"><i class="icon-g fa fa-cutlery" aria-hidden="true"></i>Gastronomía</a></li>
+                    <li class="list-gastronomy"><a href="#bar" class="a-gastronomy"><ion-icon class="icon-g" name="beer-outline"></ion-icon>Bar</a></li>
+                </a></li>
+            <li class="list"><a class="link" href="./index.html#about"><ion-icon name="newspaper-outline"></ion-icon>
                 ¿Quienes somos?</a></li>
-            <li class="list"><a class="link" href="#"><ion-icon name="map-outline"></ion-icon>
+            <li class="list"><a class="link" href="./index.html#ubicacion"><ion-icon name="map-outline"></ion-icon>
                 Nuesta ubicación</a></li>
-            <li class="list"><a class="link" href="#"><ion-icon name="chatbox-ellipses-outline"></ion-icon>
+            <li class="list"><a class="link" href="./index.html#reseña"><ion-icon name="chatbox-ellipses-outline"></ion-icon>
                 Reseñas</a></li>
-            <li class="list"><a class="link" href="#"><ion-icon name="call-outline"></ion-icon>
+            <li class="list"><a class="link" href="./index.html#contacto"><ion-icon name="call-outline"></ion-icon>
                 Contactos</a></li>
         </div>
     </section>
     <section class="gallery"> <!--Gallery-->
-        <div class="gallery-container"> <!--room-->
-            <h3 class="gallery-title">Interior</h3>
-            <div class="gallery-bx">
-                <div class="gallery-card">
-                    <a href="images/fotos/14.jpg" data-lightbox="room" data-title="My caption">
-                        <img class="card" src="images/fotos/14.jpg">
-                    </a>
-                </div>
-                <div class="gallery-card wide">
-                    <a href="images/fotos/17.jpg" data-lightbox="room" data-title="My caption">
-                        <img class="card img2" src="images/fotos/17.jpg">
-                    </a>
-                </div>
-                <div class="gallery-card">
-                    <a href="images/fotos/28.jpg" data-lightbox="room" data-title="My caption">
-                        <img class="card img3" src="images/fotos/28.jpg">
-                    </a>
-                </div>
-                <div class="gallery-card">
-                    <a href="images/fotos/29.jpg" data-lightbox="room" data-title="My caption">
-                        <img class="card img4" src="images/fotos/29.jpg">
-                    </a>
-                </div>
-                <div class="gallery-card">
-                    <a href="images/fotos/32.jpg" data-lightbox="room" data-title="My caption">
-                        <img class="card img5" src="images/fotos/32.jpg">
-                    </a>
-                </div>
-                <div class="gallery-card">
-                    <a href="images/fotos/33.jpg" data-lightbox="room" data-title="My caption">
-                        <img class="card img6" src="images/fotos/33.jpg">
-                    </a>
-                </div>
-                <div class="gallery-card">
-                    <a href="images/fotos/35.jpg" data-lightbox="room" data-title="My caption">
-                        <img class="card img7" src="images/fotos/35.jpg">
-                    </a>
-                </div>
-                <div class="gallery-card wide">
-                    <a href="images/fotos/39.jpg" data-lightbox="room" data-title="My caption">
-                        <img class="card img8" src="images/fotos/39.jpg">
-                    </a>
-                </div>
-                <div class="gallery-card">
-                    <a href="images/fotos/43.jpg" data-lightbox="room" data-title="My caption">
-                        <img class="card img9" src="images/fotos/43.jpg">
-                    </a>
-                </div>
-                <div class="gallery-card">
-                    <a href="images/fotos/44.jpg" data-lightbox="room" data-title="My caption">
-                        <img class="card img10" src="images/fotos/44.jpg">
-                    </a>
-                </div>
-                <div class="gallery-card">
-                    <a href="images/fotos/47.jpg" data-lightbox="room" data-title="My caption">
-                        <img class="card img11" src="images/fotos/47.jpg">
-                    </a>
-                </div>
-                <div class="gallery-card wide">
-                    <a href="images/fotos/51.jpg" data-lightbox="room" data-title="My caption">
-                        <img class="card img12" src="images/fotos/51.jpg">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="gallery-container"><!--exterior-->
+        <div id="exterior" class="gallery-container"><!--exterior-->
             <h3 class="gallery-title">Exterior</h3>
             <div class="gallery-bx">
                 <div class="gallery-card">
@@ -251,8 +193,78 @@
                 </div>
             </div>
         </div>
-        <div class="gallery-container"><!--gastronomy-->
-            <h3 class="gallery-title">Gastronimia</h3>
+        <div id="interior" class="gallery-container"> <!--room-->
+            <h3 class="gallery-title">Interior</h3>
+            <div class="gallery-bx">
+                <div class="gallery-card">
+                    <a href="images/fotos/14.jpg" data-lightbox="room" data-title="My caption">
+                        <img class="card" src="images/fotos/14.jpg">
+                    </a>
+                </div>
+                <div class="gallery-card wide">
+                    <a href="images/fotos/17.jpg" data-lightbox="room" data-title="My caption">
+                        <img class="card img2" src="images/fotos/17.jpg">
+                    </a>
+                </div>
+                <div class="gallery-card">
+                    <a href="images/fotos/28.jpg" data-lightbox="room" data-title="My caption">
+                        <img class="card img3" src="images/fotos/28.jpg">
+                    </a>
+                </div>
+                <div class="gallery-card">
+                    <a href="images/fotos/29.jpg" data-lightbox="room" data-title="My caption">
+                        <img class="card img4" src="images/fotos/29.jpg">
+                    </a>
+                </div>
+                <div class="gallery-card">
+                    <a href="images/fotos/32.jpg" data-lightbox="room" data-title="My caption">
+                        <img class="card img5" src="images/fotos/32.jpg">
+                    </a>
+                </div>
+                <div class="gallery-card">
+                    <a href="images/fotos/33.jpg" data-lightbox="room" data-title="My caption">
+                        <img class="card img6" src="images/fotos/33.jpg">
+                    </a>
+                </div>
+                <div class="gallery-card">
+                    <a href="images/fotos/35.jpg" data-lightbox="room" data-title="My caption">
+                        <img class="card img7" src="images/fotos/35.jpg">
+                    </a>
+                </div>
+                <div class="gallery-card wide">
+                    <a href="images/fotos/39.jpg" data-lightbox="room" data-title="My caption">
+                        <img class="card img8" src="images/fotos/39.jpg">
+                    </a>
+                </div>
+                <div class="gallery-card">
+                    <a href="images/fotos/43.jpg" data-lightbox="room" data-title="My caption">
+                        <img class="card img9" src="images/fotos/43.jpg">
+                    </a>
+                </div>
+                <div class="gallery-card">
+                    <a href="images/fotos/44.jpg" data-lightbox="room" data-title="My caption">
+                        <img class="card img10" src="images/fotos/44.jpg">
+                    </a>
+                </div>
+                <div class="gallery-card">
+                    <a href="images/fotos/47.jpg" data-lightbox="room" data-title="My caption">
+                        <img class="card img11" src="images/fotos/47.jpg">
+                    </a>
+                </div>
+                <div class="gallery-card">
+                    <a href="images/fotos/48.jpg" data-lightbox="room" data-title="My caption">
+                        <img class="card img11" src="images/fotos/48.jpg">
+                    </a>
+                </div>
+                <div class="gallery-card wide">
+                    <a href="images/fotos/51.jpg" data-lightbox="room" data-title="My caption">
+                        <img class="card img12" src="images/fotos/51.jpg">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="gastronomia" class="gallery-container"><!--gastronomy-->
+            <h3 class="gallery-title">Gastronomía</h3>
             <div class="gallery-bx">
                 <div class="gallery-card">
                     <a href="images/fotos/1.jpg" data-lightbox="gastronomy" data-title="My caption">
@@ -306,7 +318,7 @@
                 </div>
             </div>
         </div>
-        <div class="gallery-container"><!--bar-->
+        <div id="bar" class="gallery-container"><!--bar-->
             <h3 class="gallery-title">Bar</h3>
             <div class="gallery-bx">
                 <div class="gallery-card">
@@ -357,7 +369,6 @@
             </div>
         </div>
     </section>
-
     <section class="footer"> <!--footer-->
         <div class="footer-bx">
             <div class="footer-bx-content">
