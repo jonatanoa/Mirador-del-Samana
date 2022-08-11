@@ -1,7 +1,7 @@
 * {
 margin: 0;
 padding: 0;
-/* box-sizing: border-box;  */
+box-sizing: border-box; 
 }
 
 @-webkit-keyframes moveIntop {
@@ -46,7 +46,7 @@ transform: translate(0); } }
 .header {
 height: 40em;
 display: grid;
-grid-template-rows: 28rem repeat(auto-fit, minmax(4rem, 1fr));
+grid-template-rows:repeat(auto-fit, minmax(4rem, 1fr));
 background-image: linear-gradient(to left top, rgba(0, 0, 0, 0.1), rgba(112, 40, 40, 0.3)), url(../images/10.jpg);
 background-size: cover;
 min-width: 40rem;
