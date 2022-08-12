@@ -95,10 +95,7 @@ text-shadow: 2px 2px 6px #D2DB16;
 animation-name: moveInbottom;
 animation-duration: 5s; }
 
-.waves {
-display: grid;
-align-items: end; }
-
+/*description*/
 .description {
 display: grid;
 background-color: #ececec;
