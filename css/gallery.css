@@ -1,20 +1,33 @@
 * {
 margin: 0;
 padding: 0;
-box-sizing: border-box; }
+-webkit-box-sizing: border-box;
+        box-sizing: border-box; }
 html{
 scroll-behavior: smooth;
 }
 .footer {
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-justify-content: flex-end;
-align-items: flex-end;
+-webkit-box-pack: end;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+-webkit-box-align: end;
+    -ms-flex-align: end;
+        align-items: flex-end;
 min-height: 60vh; }
 
 .footer-bx {
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-justify-content: center;
-align-items: center;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
 position: relative;
 width: 100%;
 background: #3586ff;
@@ -22,14 +35,22 @@ min-height: 20rem;
 padding: 20px 50px; }
 .footer-bx-content-imgBx {
 display: grid;
-justify-content: center;
-align-items: center; }
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center; }
 .footer-bx-content-imgBx-img {
 width: 5rem; }
 .footer-bx-content-bx-title {
 display: grid;
-justify-content: center;
-align-items: center;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
 text-align: center;
 color: white;
 text-shadow: 3px 0px 2px rgba(0, 0, 0, 0.6);
@@ -38,25 +59,43 @@ font-size: 2rem;
 font-family: 'Patrick Hand', cursive;
 margin: 0 1rem 2rem; }
 .footer-bx-content-bx-contactBx {
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-justify-content: center;
-flex-direction: row;
-flex-wrap: wrap; }
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+    -ms-flex-direction: row;
+        flex-direction: row;
+-ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
 .footer-bx-content-bx-contactBx-contacts {
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-justify-content: center;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
 margin: 10px;
-align-items: center;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
 text-align: center; }
 .footer-bx-content-bx-contactBx-contacts-p {
-justify-content: center;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
 display: grid;
 font-size: 1.3rem;
 font-family: 'Patrick Hand', cursive; }
 .footer-bx-content-bx-contactBx-contacts-icon {
 list-style: none; }
 .footer-bx-content-bx-desing {
-justify-content: center;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
 text-align: center;
 display: grid;
 font-size: 1.3rem;
@@ -73,9 +112,13 @@ color: #001ca3;
 cursor: pointer;
 text-decoration: none;
 display: inline-block;
+-webkit-transition: all .4s ease;
+-o-transition: all .4s ease;
 transition: all .4s ease; }
 .footer-bx-content-bx-desing-p-a:hover {
-transform: rotate(4deg) scale(1.3);
+-webkit-transform: rotate(4deg) scale(1.3);
+    -ms-transform: rotate(4deg) scale(1.3);
+        transform: rotate(4deg) scale(1.3);
 color: white;
 text-shadow: 3px 0px 2px rgba(0, 0, 0, 0.6); }
 .footer-bx-waves_wave {
@@ -90,33 +133,49 @@ background-size: 1000px 100px; }
 z-index: 1000;
 opacity: 1;
 bottom: 0;
-animation: animateWave 4s linear infinite; }
+-webkit-animation: animateWave 4s linear infinite;
+        animation: animateWave 4s linear infinite; }
 .footer-bx-waves_wave#wave2 {
 z-index: 999;
 opacity: 0.5;
 bottom: 10px;
-animation: animateWave_02 4s linear infinite; }
+-webkit-animation: animateWave_02 4s linear infinite;
+        animation: animateWave_02 4s linear infinite; }
 .footer-bx-waves_wave#wave3 {
 z-index: 1000;
 opacity: 0.2;
 bottom: 15px;
-animation: animateWave 3s linear infinite; }
+-webkit-animation: animateWave 3s linear infinite;
+        animation: animateWave 3s linear infinite; }
 .footer-bx-waves_wave#wave4 {
 z-index: 999;
 opacity: 0.7;
 bottom: 20px;
-animation: animateWave_02 3s linear infinite; }
+-webkit-animation: animateWave_02 3s linear infinite;
+        animation: animateWave_02 3s linear infinite; }
 
 .footer .fa {
 color: white;
 font-size: 2rem;
 margin: 0 10px; }
 
+@-webkit-keyframes animateWave {
+0% {
+background-position-x: 1000px; }
+100% {
+background-position-x: 0px; } }
+
 @keyframes animateWave {
 0% {
 background-position-x: 1000px; }
 100% {
 background-position-x: 0px; } }
+
+@-webkit-keyframes animateWave_02 {
+0% {
+background-position-x: 0px; }
+100% {
+background-position-x: 1000px; } }
 
 @keyframes animateWave_02 {
 0% {
@@ -131,19 +190,32 @@ right: 20px;
 width: 120px;
 height: 60px;
 background: #fff;
-box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+-webkit-box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-justify-content: space-between;
+-webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
 z-index: 4000;
+-webkit-transition: height 0.5s, width 0.5s;
+-o-transition: height 0.5s, width 0.5s;
 transition: height 0.5s, width 0.5s;
-transition-delay: 0s, 0.75s;
+-webkit-transition-delay: 0s, 0.75s;
+     -o-transition-delay: 0s, 0.75s;
+        transition-delay: 0s, 0.75s;
 overflow: hidden;
 }
 .navigation.active{
 width: 300px;
 height: 400px;
+-webkit-transition: width 0.5s, height 0.5s;
+-o-transition: width 0.5s, height 0.5s;
 transition: width 0.5s, height 0.5s;
-transition-delay: 0s, 0.75s;
+-webkit-transition-delay: 0s, 0.75s;
+     -o-transition-delay: 0s, 0.75s;
+        transition-delay: 0s, 0.75s;
 }
 .navigation .userBx{
 position: relative;
@@ -151,14 +223,24 @@ width: 60px;
 height: 60px;
 background: #fff;
 overflow: hidden;
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-align-items: center;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+-webkit-transition: 0.5s;
+-o-transition: 0.5s;
 transition: 0.5s;
-transition-delay: 0.5s;
+-webkit-transition-delay: 0.5s;
+     -o-transition-delay: 0.5s;
+        transition-delay: 0.5s;
 }
 .navigation.active .userBx{
 width: calc(100% - 60px);
-transition-delay: 0s;
+-webkit-transition-delay: 0s;
+     -o-transition-delay: 0s;
+        transition-delay: 0s;
 }
 .navigation .userBx .titlemenu{
 white-space: nowrap; /*esto hace que el nombre salga del contenedor padre*/
@@ -182,15 +264,22 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-object-fit: cover;
+-o-object-fit: cover;
+   object-fit: cover;
 }
 .navigation .menuToggle{
 width: 60px;
 height: 60px;
 cursor: pointer;
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-justify-content: center;
-align-items: center;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
 }
 .navigation .menuToggle::before{  /*Raya de arriba*/
 content: '';
@@ -198,8 +287,13 @@ position: absolute;
 width: 32px;
 height: 2px;
 background: #555;
-transform: translateY(-10px);
-box-shadow: 0 10px #555;
+-webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+        transform: translateY(-10px);
+-webkit-box-shadow: 0 10px #555;
+        box-shadow: 0 10px #555;
+-webkit-transition: .5s;
+-o-transition: .5s;
 transition: .5s;
 }
 .navigation .menuToggle::after{ /*Raya de abajo*/
@@ -208,15 +302,24 @@ position: absolute;
 width: 32px;
 height: 2px;
 background: #555;
-transform: translateY(10px);
+-webkit-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+        transform: translateY(10px);
+-webkit-transition: .5s;
+-o-transition: .5s;
 transition: .5s;
 }
 .navigation.active .menuToggle::before{ /*efecto Raya de arriba*/
-transform: translateY(0px) rotate(45deg);
-box-shadow: 0 0px #555;
+-webkit-transform: translateY(0px) rotate(45deg);
+    -ms-transform: translateY(0px) rotate(45deg);
+        transform: translateY(0px) rotate(45deg);
+-webkit-box-shadow: 0 0px #555;
+        box-shadow: 0 0px #555;
 }
 .navigation.active .menuToggle::after{ /*efecto Raya de abajo*/
-transform: translateY(0px) rotate(-45deg);
+-webkit-transform: translateY(0px) rotate(-45deg);
+    -ms-transform: translateY(0px) rotate(-45deg);
+        transform: translateY(0px) rotate(-45deg);
 }
 .list-gastronomy{
 list-style: none;
@@ -225,9 +328,13 @@ padding-left: 2rem;
 }
 .a-gastronomy{
 text-decoration: none;
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
 font-family: 'Open Sans', sans-serif;
-align-items: center;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
 gap: 10px;
 font-weight: 600;
 color: #555;
@@ -253,9 +360,13 @@ list-style: none;
 color: #4e65ff ;
 }
 .menu .list .link{
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
 font-family: 'Open Sans', sans-serif;
-align-items: center;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
 gap: 10px;
 margin: 8px 0;
 font-size: 1.2em;
@@ -277,7 +388,9 @@ padding: 2rem;
 }
 .gallery-title{
 display: grid;
-justify-content: center;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
 color: #fb5757;
 text-shadow: 3px 0px 2px rgba(0, 0, 0, 0.6);
 padding-top: 4rem;
@@ -301,12 +414,20 @@ border-radius: 10px 10px 10px 10px;
 .gallery .gallery-card .card{
 width: 100%;
 height: 15rem;
-object-fit: cover;
+-o-object-fit: cover;
+   object-fit: cover;
+-webkit-transition: -webkit-transform 0.3s ease-in-out;
+transition: -webkit-transform 0.3s ease-in-out;
+-o-transition: transform 0.3s ease-in-out;
 transition: transform 0.3s ease-in-out;
+transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 .gallery .gallery-card .card:hover{
-filter: opacity(0.9);
-transform: scale(1.1);
+-webkit-filter: opacity(0.9);
+        filter: opacity(0.9);
+-webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+        transform: scale(1.1);
 }
 @media(min-width:600px){
 .gallery .wide{
