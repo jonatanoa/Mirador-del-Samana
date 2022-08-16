@@ -103,7 +103,7 @@ padding-top: 4rem;
 animation-name: moveIntop;
 -webkit-animation-duration: 5s;
 animation-duration: 5s; }
-@media (max-width:699px) {
+/* @media (max-width:699px) {
 .heading-primary-main{
 font-size: 4em;
 }
@@ -113,7 +113,7 @@ height: 4rem;
 .heading-primary-sub{
 font-size: 2em !important;
 }
-}
+} */
 .heading-primary-sub {
 color: white;
 font-family: 'Dancing Script', cursive;
