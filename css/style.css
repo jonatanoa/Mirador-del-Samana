@@ -67,7 +67,7 @@ background-image: -webkit-gradient(linear, right bottom, left top, from(rgba(0, 
 background-image: -o-linear-gradient(right bottom, rgba(0, 0, 0, 0.1), rgba(112, 40, 40, 0.3)), url(../images/10.jpg);
 background-image: linear-gradient(to left top, rgba(0, 0, 0, 0.1), rgba(112, 40, 40, 0.3)), url(../images/10.jpg);
 background-size: cover;
-min-width: 40rem;
+/* min-width: 40rem; */
 background-position: top; }
 
 .header-logo {
@@ -131,7 +131,7 @@ display: grid;
 background-color: #ececec;
 height: auto;
 padding-bottom: 8rem;
-min-width: 40rem;
+/* min-width: 40rem; */
 -webkit-box-shadow: 0px 10px 14px -4px rgba(0, 0, 0, 0.75);
 box-shadow: 0px 10px 14px -4px rgba(0, 0, 0, 0.75);
 border: 1px solid rgba(255, 255, 255, 0.2); }
@@ -204,7 +204,7 @@ display: grid;
 background-color: #ececec;
 height: auto;
 padding-bottom: 4rem;
-min-width: 40rem;
+/* min-width: 40rem; */
 -webkit-box-shadow: 0px 10px 14px -4px rgba(0, 0, 0, 0.75);
 box-shadow: 0px 10px 14px -4px rgba(0, 0, 0, 0.75);
 border: 1px solid rgba(255, 255, 255, 0.2); }
@@ -324,7 +324,7 @@ color: #ebfafa; }
 .location {
 display: grid;
 height: auto;
-min-width: 40rem;
+/* min-width: 40rem; */
 padding-bottom: 8rem;
 -webkit-box-shadow: 0px -8px 12px -8px rgba(0, 0, 0, 0.75) inset;
 box-shadow: 0px -8px 12px -8px rgba(0, 0, 0, 0.75) inset; }
@@ -377,7 +377,7 @@ box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
 display: grid;
 -webkit-box-sizing: border-box;
 box-sizing: border-box;
-min-width: 40rem;
+/* min-width: 40rem; */
 background-image:url(../images/amanecer.jpg);
 background-size: cover;
 background-position: top;
@@ -503,7 +503,7 @@ justify-content: flex-end;
 -webkit-box-align: end;
 -ms-flex-align: end;
 align-items: flex-end;
-min-width: 40rem;
+/* min-width: 40rem; */
 min-height: 60vh; }
 .btn-gallery{
 border-top: 1px solid #60aadf;
