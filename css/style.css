@@ -516,7 +516,7 @@ justify-content: center;
 -webkit-box-align: center;
 -ms-flex-align: center;
 align-items: center;
-font-family: 'Patrick Hand', cursive;
+font-family: 'Open Sans', sans-serif;
 padding-bottom: 8rem;
 }
 .btn-title{
@@ -551,7 +551,7 @@ background: #0037ff;
 -webkit-transition: all 1s ease;
 -o-transition: all 1s ease;
 transition: all 1s ease;
-font-family: 'Dancing Script', cursive;
+font-family: 'Open Sans', sans-serif;
 border-radius: 5px 5px 5px 5px;
 }
 .btn3:hover {
@@ -597,7 +597,7 @@ color: white;
 text-shadow: 3px 0px 2px rgba(0, 0, 0, 0.6);
 padding-top: 3rem;
 font-size: 2rem;
-font-family: 'Patrick Hand', cursive;
+font-family: 'Open Sans', sans-serif;
 margin-bottom: 2rem; }
 .footer-bx-content-bx-contactBx {
 display: -webkit-box;
@@ -625,7 +625,7 @@ text-align: center; }
 justify-content: center;
 display: grid;
 font-size: 1.3rem;
-font-family: 'Patrick Hand', cursive; }
+font-family: 'Open Sans', sans-serif; }
 .footer-bx-content-bx-contactBx-contacts-icon {
 list-style: none; }
 .footer-bx-content-bx-desing {
